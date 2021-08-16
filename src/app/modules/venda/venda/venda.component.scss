@@ -1,0 +1,109 @@
+.produtos {
+    padding-top: 80px;
+}
+
+/* Pay Button */
+.payButton {
+    border: 0;
+    /* Auto Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 48px;
+    position: relative;
+    width: 80%;
+    height: 48px;
+
+    /* text/text-default */
+    background: #3C4257;
+    /* shadow-button */
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.12), 0px 2px 5px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+
+    label {
+
+        /* FINALIZAR COMPRA */
+        
+        position: static;
+        width: 157px;
+        height: 24px;
+        left: 85px;
+        top: 12px;
+        
+        font-family: Franklin Gothic Medium;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        
+        color: #E8E8E8;
+    }
+}
+
+.novoCliente { background: #6776ac; }
+
+.codProduto {
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    padding: 9px 12px;
+    align-items: flex-start;
+    height: 69px;
+    background: #FFFFFF;
+
+    /* border-color */
+    box-sizing: border-box;
+
+    /* shadow-small */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.qtdProduto {
+    background-color: #B5B5B5;
+    border-radius: 0 0 0 0 !important;
+}
+
+.valorProduto::before {
+    content: "Valor unitário \a";
+    color: #727272;
+    display: block;
+  }
+
+.btnAdd {
+    margin: -2px 0 0 -5px !important;
+}
+
+
+.boxCaixa {
+    width: 80%;
+    background: #F8F8F8;
+    svg {
+        width: 100% !important;
+        margin-top: -18px !important;
+    }
+}
+
+
+.tabela {
+    width: 100%;
+    thead {
+        height: 40px !important;
+        th { padding-left: 5px !important; }
+        * {
+            background-color: #B5B5B5;
+        }
+
+    }
+
+    tr {
+        height: 40px !important;
+        
+        td {
+            padding-left: 15px !important;
+            vertical-align: middle;
+            border: 1px solid #3C4257;
+            border-left: 0;
+            border-right: 0;
+        }
+    }
+}

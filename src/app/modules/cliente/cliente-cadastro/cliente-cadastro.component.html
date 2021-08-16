@@ -1,0 +1,38 @@
+
+<h1 mat-dialog-title>Cadastro de clientes</h1>
+<div mat-dialog-content [formGroup]="clienteForm">
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Nome:</mat-label>
+                <input matInput formControlName="SNome">
+                <!-- <mat-error>{{validateMessage.message(clienteForm.controls.SNome)}}</mat-error> -->
+              </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>E-mail:</mat-label>
+                <input matInput formControlName="SEmail" email>
+                <!-- <mat-error>{{validateMessage.message(clienteForm.controls.SEmail)}}</mat-error> -->
+              </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Aldeia:</mat-label>
+                <input matInput formControlName="SAldeia">
+                <!-- <mat-error>{{validateMessage.message(clienteForm.controls.SAldeia)}}</mat-error> -->
+              </mat-form-field>
+        </div>
+    </div>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="false" [disabled]="salvando">Cancelar</button>
+  <button (click)="salvar()" [disabled]="!clienteForm.valid || salvando" mat-button>Salvar</button>
+</div>
